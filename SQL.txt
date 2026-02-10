@@ -1,0 +1,80 @@
+SQL
+
+1.create table 
+it is first step  . create table student(    )
+
+
+2.insert value 
+insert the value on the table . insert into student values("","")...
+
+3.select * from
+select everything and print the output.  select *from student;
+
+4.where
+it is a condition . select * from student where dept ="it" ..so it give only which row has dept it 
+
+5.and/or
+and - both condition 1 and condition 2 be true then only output print , dept="it" and id="2". these two are true then only it print.
+or - any one of the condition is true . it print the output  ,  dept="it" or id ="3"  . here dept -it  ,id -3  is crt but these are not same row,
+  this dept doesn't have id 3 . so it print those two rows.
+ 
+6.order by
+order by this  a sorting . order by id , order by id desc , order by name ...
+
+7.limit
+ itself name has "limit. so , limit 3 so print only 3 rows .... 
+
+8.like (text)
+it is a search method only for text,if want to search and print some word use this keyword
+where dept like 'h%'  - it print which word start h 
+where dept like '%h'  - print which word end with h            
+where dept like '%h%' - print which word in between has h 
+
+where dept like '_h'  - it contains only two letter and end with h print it
+where dept like 'h_'  - ir contains only  two letter and start with h print it
+
+9.In
+in it similar to Or  .    where dept in("bca","it")  ... it print both bca and it have rows
+
+10.between (int)
+between it like a range . where year between 2022  and 2026;
+between all year is print.
+
+11.distinct
+remove the duplicate ..  select distinct dept from example;
+
+
+12.count
+count the rows  from the table .. select count(dept) or count(*) from example;
+
+13.group by
+
+it like a filter . make a group and count .
+select dept, count(*) from example group by dept having count(*) >1;
+it group by the dept and dept.
+
+
+14.Having
+where vs having 
+where - filter the row only , comes before the group by
+having - filter the result of group by , comes after the group by
+
+
+15.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
